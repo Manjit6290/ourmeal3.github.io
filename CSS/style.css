@@ -1,0 +1,260 @@
+/* css reset */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(240, 255, 248);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* logo and img */
+#logo {
+    margin: 7px 20px;
+}
+
+#logo img {
+    margin: 12px 22px;
+    height: 50px;
+    width: 50px;
+}
+
+/* Navbar */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 98px;
+    justify-content: center;
+}
+
+/* List styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 6px 42px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    margin: -56px 0px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../img/pexels-ahmad-no-more-7592525.jpg) no-repeat center center/cover;
+    height: 490px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+#home p {
+    color:white;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* services section */
+#services {
+    margin: 25px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    background-color: rgb(215, 212, 209);
+    border-radius: 23px;
+    padding: 34px;
+    margin: 10px;
+}
+
+#services .box img {
+
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+
+#services .box p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* our clients */
+#client-section{
+    margin: 45px 0px;
+    position: relative;
+    height: 242px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg1.jpg) no-repeat center center/cover;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 90px;
+}
+.client-items{
+    padding: 20px 50px;
+    margin: 15px 18px;
+
+}
+
+/* contact section */
+#contact{
+position: relative;
+margin: 200px 0px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    height: 110%;
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+#contact-box form{
+    width: 40%;
+   
+}
+#contact-box label{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+#contact-box textarea{
+    width: 100%;
+    height: 28px;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+#submit{
+    font-size: 1.8rem;
+    background-color: rgb(225, 113, 135);
+    color: black;
+    border: 2px solid rgb(83, 82, 82);
+    border-radius: 8px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(169, 37, 37);
+    border: 2px solid white;
+    padding: 7px 14px;
+    margin: 15px 20px;
+    border-radius: 10px;
+    /* font-size: 1.5rem; */
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
